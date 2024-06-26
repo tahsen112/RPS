@@ -1,0 +1,357 @@
+body {
+     font-family: Verdana;
+     font-size: 1em;
+     margin: 0;
+}
+
+/* .parent {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 2.2em;
+} */
+
+/* .counter {
+     font-size: 3.5em;
+}
+
+#d-btn,
+#r-btn,
+#i-btn {
+     background-color: rgb(43, 43, 253);
+     color: white;
+     border: black 1px solid;
+     font-size: 0.7em;
+     margin-left: 0.7em;
+}
+
+#d-btn:hover,
+#r-btn:hover,
+#i-btn:hover {
+     background-color: rgb(74, 74, 255);
+}
+
+#d-btm:active {
+     background-color: rgb(150, 150, 255);
+
+} */
+
+body {
+     font-family: Verdana;
+     font-size: 1em;
+     margin: 0;
+     background-color: #111111;
+}
+
+
+
+.contaner {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     min-height: 50dvh;
+     max-width: 50%;
+     background: #196693;
+     border-radius: 25px;
+     margin: 10% auto 0px auto;
+     position: relative;
+     box-shadow: inset 0px 0px 10px white;
+     overflow: hidden;
+}
+
+.shapes {
+     position: absolute;
+     background: #00ff94;
+     height: 100dvh;
+     max-width: 100%;
+     width: 800px;
+     animation: rot 180s infinite linear 0ms;
+}
+
+@keyframes rot {
+     from {
+          transform: rotate(360deg) translate(0px, 0px);
+     }
+
+     to {
+          transform: rotate(-360deg) translate(5px, 0px);
+     }
+}
+
+.shape1 {
+     width: 150px;
+     height: 150px;
+     background: #9a2286;
+     border-radius: 100%;
+     position: absolute;
+     transform: scale(2);
+     top: 5em;
+}
+
+.shape2 {
+     width: 400px;
+     height: 100px;
+     background: #15aa50;
+     border-radius: 100px;
+     position: absolute;
+     left: 150px;
+     top: 7em;
+     transform: rotate(-25deg) scale(1.5);
+}
+
+.shape3 {
+     background: #2c1b86;
+     width: 200px;
+     height: 131px;
+     border-radius: 100%;
+     position: absolute;
+     bottom: 5px;
+     transform: scale(1.5);
+     bottom: 6em;
+}
+
+.shape4 {
+     background: #277bf2;
+     width: 300px;
+     height: 120px;
+     border-radius: 100px;
+     position: absolute;
+     bottom: 30px;
+     right: -35px;
+     transform: rotate(10deg) scale(1.5);
+     bottom: 4em;
+}
+
+.blurEff {
+     width: 100vw;
+     height: 100vh;
+     position: absolute;
+     z-index: 2;
+     backdrop-filter: blur(40px);
+}
+
+
+
+.computerMod,
+.frindMod {
+     background: #00000069;
+     width: 9em;
+     height: 3em;
+     margin: 1.2em;
+     border-radius: 1em;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     transition: 0.4s;
+     z-index: 5;
+     position: absolute;
+     border: 1px solid;
+     border-bottom: red;
+     border-left: red;
+}
+
+.computerMod {
+     right: 50%;
+}
+
+.frindMod {
+     left: 50%;
+}
+
+.computerMod:hover,
+.frindMod:hover {
+
+     background-color: #0000008f;
+     color: rgb(201, 201, 201);
+}
+
+.content {
+     display: none;
+     flex-direction: column;
+}
+
+.hand {
+     padding: 0.2em;
+     background: #37a0c2;
+     width: 2em;
+     margin: 10px;
+     height: 2em;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 2em;
+     cursor: pointer;
+}
+
+.hands2 .hand {
+     cursor: default;
+}
+
+.hands {
+     display: flex;
+     font-size: 2em;
+     justify-content: center;
+}
+
+.hands2 {
+     display: flex;
+     font-size: 2em;
+     align-items: center;
+     margin-bottom: 2em;
+}
+
+.player1Btn {
+     font-size: 0.7em;
+     background: blueviolet;
+     padding: 0.5em;
+     border-radius: 1em;
+     margin: 0 1em;
+     box-shadow: 4px 5px #340c58;
+     cursor: default;
+     transition: 0.2s;
+}
+
+.player1Btn:hover {
+     box-shadow: 1px 2px #340c58;
+}
+
+.player2Btn {
+     font-size: 0.7em;
+     background: blueviolet;
+     padding: 0.5em;
+     border-radius: 1em;
+     margin: 0 1em;
+     box-shadow: 4px 5px #340c58;
+     cursor: default;
+     transition: 0.2s;
+}
+
+.player2Btn:hover {
+     box-shadow: 1px 2px #340c58;
+}
+
+.cPar {
+     margin-bottom: 4em;
+     font-size: 1.2em;
+}
+
+h3 {
+     margin-top: 4em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+#cc {
+     font-size: 1.5em;
+     margin-left: 0.2em;
+}
+
+.endScen {
+     background: #090909d9;
+     width: 15em;
+     height: 21em;
+     position: absolute;
+     color: wheat;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     display: none;
+     border: 1px solid darksalmon;
+     z-index: 9;
+     backdrop-filter: blur(5px);
+}
+
+#h3End {
+     margin-top: 4em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 3em;
+}
+
+#playAgin {
+     background: darkorchid;
+     width: 7em;
+     padding: 0.5em;
+     font-size: 1.1em;
+     margin-bottom: 0.5em;
+     height: 1.3em;
+     cursor: pointer;
+     border-radius: 10px;
+     border-bottom-right-radius: 0px;
+     border-bottom-left-radius: 0px;
+}
+
+#exit {
+     background: darkorchid;
+     width: 7em;
+     padding: 0.5em;
+     font-size: 1.1em;
+     height: 1.3em;
+     cursor: pointer;
+     border-radius: 10px;
+     border-top-right-radius: 0px;
+     border-top-left-radius: 0px;
+}
+
+@media (max-width: 400px) {
+
+     body {
+          font-size: 1.3em;
+     }
+
+     .contaner {
+          min-height: 70dvh;
+          max-width: 70%;
+          margin: 25% auto 0px auto;
+          flex-direction: column;
+     }
+
+     .computerMod,
+     .frindMod {
+          position: static;
+     }
+
+     .shape2 {
+          left: 5em;
+          top: 11em;
+     }
+
+     .shape3 {
+          bottom: 8em;
+     }
+
+     .player1 {
+          position: absolute;
+          top: 50px;
+          left: 0px;
+     }
+
+     .player2 {
+          position: absolute;
+          bottom: -20px;
+          right: 0px;
+     }
+
+     .player1Btn {
+          margin: 0.5em 1em;
+     }
+
+     .player2Btn {
+          margin: 0.5em 1em;
+     }
+
+     .hands2 {
+          flex-direction: column;
+     }
+
+     .content {
+          font-size: 0.8em;
+     }
+
+}
